@@ -1,73 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Facebook Login</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>TECH HACKING HOME PAGE</title>
   <style>
     body {
+      margin: 0;
+      padding: 0;
       font-family: Arial, sans-serif;
-      background-color: #f0f2f5;
+      background-color: blanchedalmond;
     }
-
-    .container {
-      max-width: 400px;
-      margin: 0 auto;
+    .nav {
+      background-color: ghostwhite;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 50px;
+      border-radius: 20px;
+      margin-top: 10px;
+    }  
+    .nav a {
+      text-decoration: none;
+      padding: 10px 20px;
+    }
+    .title {
+      text-align: center;
+      margin-top: 20px;
+    }
+    .intro {
+      background-color: white;
+      width: 90%;
+      max-width: 600px;
+      margin: 20px auto;
       padding: 20px;
-      background-color: #fff;
-      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-      border-radius: 5px;
-      margin-top: 100px;
+      border-radius: 10px;
+      font-style: oblique;
+      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
     }
-
-    h2 {
-      text-align: center;
-      margin-bottom: 20px;
+    .video-container {
+      position: relative;
+      padding-bottom: 56.25%; /* 16:9 aspect ratio */
+      height: 0;
+      overflow: hidden;
+      margin: 20px auto;
     }
-
-    input[type="text"],
-    input[type="password"] {
+    .video-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
       width: 100%;
-      padding: 12px;
-      margin-bottom: 10px;
-      border: 1px solid #ccc;
-      border-radius: 3px;
-      box-sizing: border-box;
+      height: 100%;
     }
-
-    input[type="submit"] {
-      width: 100%;
-      background-color: #1877f2;
-      color: #fff;
-      padding: 12px;
-      border: none;
-      border-radius: 3px;
-      cursor: pointer;
-    }
-
-    input[type="submit"]:hover {
-      background-color: #0e63ac;
-    }
-
-    .text-center {
+    footer {
       text-align: center;
-    }
-    .fac{
-        color:#0e63ac;
+      margin-top: 20px;
     }
   </style>
 </head>
-<body>
-  <div class="container">
-    <h2 class="fac">Log In to Facebook</h2>
-    <form action="/login" method="POST">
-      <input type="text" placeholder="Email or Phone Number" name="username">
-      <input type="password" placeholder="Password" name="password">
-      <input type="submit" value="Log In">
-    </form>
-    <p class="text-center">Forgot password? <a href="#">cLick here</a></p>
-  </div>
-</body>
 
+<body>
+  <div class="nav">
+    <a href="index.html">HOME</a>
+    <a href="video.html">VIDEOS</a>
+  </div>
+  <div class="title">
+    <h1>TECH HACKING</h1>
+  </div>
+  <div class="intro">
+    <p>Unveil the enigmatic world of hacking, a realm where digital adventurers master the art of unraveling complex codes, navigating intricate networks, and breaching virtual barriers...</p>
+  </div>
+  <div class="video-container">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/xKPTb5eeU8o" frameborder="0" allowfullscreen></iframe>
+  </div>
+  <div class="video-container">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/Lbv_jN_jAhs" frameborder="0" allowfullscreen></iframe>
+  </div>
+  
+  <footer>
+    <address>Copyright &copy; TECH HACKING</address>
+  </footer>
+</body>
 </html>
